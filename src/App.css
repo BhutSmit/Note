@@ -1,0 +1,217 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(50, 50, 50, 0.5);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+}
+
+body{
+
+  background-color: #111111;
+}
+
+.Header{
+
+  /*background-color: #f1c40f;*/
+  background-color: #1e1e1e;
+  padding: 10px;
+  color: #efefef;
+  font-size: 20px;
+}
+
+.logo{
+
+  margin: 0px 10px;
+}
+
+.footer{
+
+  width: 100%;
+  /*background-color: #ecf0f1;*/
+  background-color: #3c3c3c;
+  color: #efefef;
+  /*position: absolute;*/
+  /*bottom: 0;*/
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.main-note{
+
+  width: 20%;
+  height: auto;
+  background-color: rgba(20, 20, 20, 0.9);
+  border: 2px solid rgba(149, 165, 160, 0.2);
+  border-radius: 10px;
+  padding: 20px 0px;
+  margin: 100px auto;
+  position: relative;
+  box-shadow: 2px 2px 5px 5px rgba(20, 20, 20, 0.5) , 
+            3px 3px 5px 5px rgba(20, 20, 20, 0.3) , 
+            -2px -2px 5px 2px rgba(50, 50, 50, 0.2) , 
+            -3px -3px 8px 4px rgba(50, 50, 50, 0.3) , 
+            -4px -4px 3px 2px rgba(50, 50, 50, 0.3);
+}
+
+.container-input{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-input .title{
+
+  background-color: transparent;
+  color: #ecf0f1;
+  border: 1px solid transparent;
+  border-bottom-color: rgba(189, 195, 199, 0.9);
+  outline: none;
+  padding: 10px 0px;
+  margin: 10px 0px;
+}
+
+.container-input textarea{
+
+  background-color: transparent;
+  color: #ecf0f1;
+  border: 1px solid transparent;
+  border-bottom-color: rgba(189, 195, 199, 0.9);
+  outline: none;
+  resize: none;
+  padding: 10px 0px;
+  margin: 10px 0px;
+}
+
+.note{
+
+  width: 250px;
+  height: 150px;
+  background-color: rgba(20, 20, 20, 0.8);
+  border: 2px solid rgba(150, 150, 150, 0.2);
+  color: #ecf0f1;
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  overflow: hidden scroll;
+  text-overflow: ellipsis;
+}
+
+.note:hover{
+
+  transform: translateY(-10px);
+  box-shadow: 0px 5px 10px 0px rgba(180, 180, 180, 0.2);
+}
+
+.note-container{
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0px 10px;
+}
+
+.button{
+
+  width: 40px;
+  height: 40px;
+  background-color: rgba(30, 30, 30, 0.8);
+  color: #bdc3c7;
+  border: 2px solid rgba(200, 180, 200, 0.5);
+  border-radius: 50%;
+  /*padding: 8px 20px;*/
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  font-size: 20px;
+}
+
+.buttons{
+
+  position: absolute;
+  top: 10%;
+  left: 80%;
+  background-color: transparent;
+  border: 1px solid rgba(200, 200, 200, 0.5);
+  outline: none;
+  border-radius: 50%;
+  padding: 8px 10px;
+  color: #ff4757;
+  font-size: 10px;
+  transition: all 0.5s linear;
+}
+
+.buttons:hover{
+
+  background-color: #ff4757;
+  color: #efefef;
+}
+
+.note-title{
+
+  text-transform: capitalize;
+}
+
+.note-content{
+
+  margin: 10px 0px;
+  font-size: 13px;
+}
